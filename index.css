@@ -1,0 +1,45 @@
+/*this is my first proper CSS file */
+
+
+body{
+
+    background-color: #b8d9ec ;
+    max-width: 450px;
+    margin: auto;
+}
+
+h1{
+
+    color: rgb(85, 128, 184);
+    font-family: 'Poppins', sans-serif ;
+}
+
+h2{
+    color: #3a5b5f;
+    font-family: 'Poppins', sans-serif ;
+}
+
+h3{
+    color: #598655;
+    font-family: 'Poppins', sans-serif ;
+}
+
+p{font-family: 'Poppins', sans-serif;
+color: rgb(0, 0, 0);
+}
+
+
+
+.chart{
+    width: 350px;
+    border-width: 10px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: white;
+    margin: auto;
+
+
+}
+
+
