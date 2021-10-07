@@ -51,11 +51,11 @@
     "color": {
       "field": "areaName",
       "type": "nominal",
-      "scale": {"scheme": "set2"},
+      "scale": {"scheme": "pastel1"},
       "title": "Regions",
       "legend": {
         "orient": "top-left", 
-        "fillColor": "#f1fafa"}
+        "fillColor": "#faf7f1"}
     }
 }
 }
