@@ -20,7 +20,7 @@
     "type": "line",
     "point": false,
     "interpolate": "monotone",
-    "color": "blueviolet"
+    "color": "lightpink"
   },
   "encoding": {
     "x": {
