@@ -30,7 +30,7 @@
   },
 
   "encoding": {
-    "x": {"field": "a", "type": "temporal", "axis": {"labelAngle": -70}, "title": "Months"},
+    "x": {"field": "a", "type": "temporal", "axis": {"labelAngle": -70, "tickCount": 9}, "title": "Months"},
     "y": {"field": "b", "type": "quantitative", "scale": {"domain": [0, 100]}, "title": "FTE factor as a %"}
   }
 }
