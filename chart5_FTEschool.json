@@ -1,0 +1,36 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple bar chart with embedded data.",
+
+  "title": {
+    "text": "Primary school remote learning FTE factor",
+    "subtitle": ["Full-time equivalence (FTE) factor for remote learners", "relative to in-school learners"],
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "anchor": "start",
+    "color": "black"
+  },
+
+  "data": {
+    "values": [
+      {"a": "Apr-2020", "b": 30}, {"a": "May-2020", "b": 34},
+      {"a": "Jun-2020", "b": 39}, {"a": "Sept-2020", "b": 26}, 
+      {"a": "Oct-2020", "b": 40}, {"a": "Nov-2020", "b": 39},
+      {"a": "Dec-2020", "b": 35}, {"a": "Jan-2021", "b": 41}, 
+      {"a": "Feb-2021", "b": 43}, {"a": "Mar-2021", "b": 52},
+      {"a": "Apr-2021", "b": 63}, {"a": "May-2021", "b": 41},
+      {"a": "Jun-2021", "b": 40}
+    ]
+  },
+
+  "mark": {
+    "type": "bar",
+    "color": "peachpuff",
+    "width": 8.5
+  },
+
+  "encoding": {
+    "x": {"field": "a", "type": "temporal", "axis": {"labelAngle": -70}, "title": "Months"},
+    "y": {"field": "b", "type": "quantitative", "scale": {"domain": [0, 100]}, "title": "FTE factor as a %"}
+  }
+}
