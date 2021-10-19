@@ -1,9 +1,9 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
     "data": {
-        "url": "CO2EmissionsData.csv"
+        "url": "CO2EmissionsData.csv",
         "format": {"type": "csv"}
-    }
+    },
     
     "mark": "bar",
     "width": "container",
