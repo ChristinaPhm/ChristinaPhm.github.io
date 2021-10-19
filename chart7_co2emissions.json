@@ -1,8 +1,7 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-    "data": {
-      "url": "https://raw.githubusercontent.com/ChristinaPhm/ChristinaPhm.github.io/main/CO2EmissionsData.csv"
-    },
+    "data": "CO2EmissionsData.csv",
+    
     "mark": "bar",
     "width": "container",
     "height": 300,
