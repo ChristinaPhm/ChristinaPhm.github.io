@@ -22,7 +22,7 @@
       "opacity":0.5
     },
      
-    "width":500,
+    "width":300,
     
     "encoding": {
       
@@ -37,7 +37,7 @@
         "field": "average", 
         "type": "quantitative",
         "scale": {"domain": [0.02, 0.045]},
-        "title":null
+        "title":"Average emissions"
         },
   
       "color":{
