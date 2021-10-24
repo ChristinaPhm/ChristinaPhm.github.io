@@ -41,16 +41,18 @@ color: rgb(255, 255, 255);
   border-radius: 25px;
 }
 
-.chart{
-    width: 350px;
-    border-width: 10px;
-    background-color: white;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: white;
-    margin: auto;
-
-
+.chart {
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 20px;
+  transition: border-radius 500ms, flex-grow 1000ms;
+  width: 45%;
+  min-width: 400px;
+  
 }
 
 
