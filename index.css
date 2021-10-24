@@ -55,4 +55,17 @@ color: rgb(255, 255, 255);
   
 }
 
+#chart8{
+  background-color: white;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px;
+  border-radius: 25px;
+  text-align: center;
+  padding: 20px;
+  transition: padding 500ms, border-radius 500ms;
+  width: 100%;
+  min-width: 400px;
+}
+
 
