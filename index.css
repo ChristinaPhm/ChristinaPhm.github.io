@@ -30,7 +30,7 @@ color: rgb(255, 255, 255);
 }
 
 .bcontainer {
-  display: flexbox;
+  display: flex;
   flex-flow: row wrap;
   justify-content: center;;
   gap: 30px 30px;
