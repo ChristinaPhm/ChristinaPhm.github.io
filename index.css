@@ -30,13 +30,13 @@ color: rgb(255, 255, 255);
 }
 
 .bcontainer {
-  display: flex;
+  display: flexbox;
   flex-flow: row wrap;
   justify-content: center;;
   gap: 30px 30px;
   margin-top: 30px;
   border-style: solid;
-  border-color: white;
+  border-color: rgb(129, 116, 116);
   padding: 30px;
   border-radius: 25px;
 }
