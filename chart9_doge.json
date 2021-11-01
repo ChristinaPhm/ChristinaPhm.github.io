@@ -1,0 +1,27 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+
+"title": {
+    "text": "Doge Stock Prices in 2021",
+    "subtitle":"Data source: CoinApi",
+    "subtitleFontStyle":"italic",
+    "subtitleFontSize":10,
+    "subtitleColor": "sienna",
+    "anchor": "start",
+    "color": "maroon"
+  },
+      
+    "data": {"url": "https://rest.coinapi.io/v1/ohlcv/DOGE/USD/history?period_id=8HRS&time_start=2021-01-01T00:00:00&limit=1000&include_empty_items=false&apikey=FCB2BB27-5458-483B-88CE-926C357E0606"},
+    
+    "mark": {
+      "type": "line",
+      "color": "brown"
+    },
+    
+    "encoding": {
+      
+      "x": {"field": "time_period_end", "type": "temporal", "title": ""},
+      
+      "y": {"field": "price_close", "type": "quantitative", "title": "Stock Price (USD)"}
+    }
+}
