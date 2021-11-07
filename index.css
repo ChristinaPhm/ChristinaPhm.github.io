@@ -38,7 +38,7 @@ color: rgb(255, 255, 255);
   border-style: solid;
   border-color: rgb(129, 116, 116);
   padding: 30px;
-  border-radius: 25px;
+  border-radius: 30px;
 }
 
 .chart {
@@ -49,8 +49,8 @@ color: rgb(255, 255, 255);
   border-radius: 25px;
   text-align: center;
   padding: 20px;
-  width: 40%;
-  min-width: 500px;
+  width: 30%;
+  min-width: 300px;
   
 }
 
