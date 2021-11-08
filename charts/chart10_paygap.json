@@ -1,0 +1,34 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A line chart displaying UK gender hourly pay.",
+  
+    "title": {
+      "text": "UK Gender Pay Gap",
+      "subtitle": ["Gender pay gap statistics for the UK calculated using earnings data from", "ONS's Annual Survey of Hours and Earnings."],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "subtitleColor": "saddlebrown",
+      "anchor": "start",
+      "color": "saddlebrown"
+    },
+  
+    "height": 250,
+    "width": 300,
+    
+      "data": {
+        "url": "https://raw.githubusercontent.com/ChristinaPhm/ChristinaPhm.github.io/main/data/data_gov-united_kingdom_all_pay_gap_percent.json",
+        "format": {
+          "property": "rows"
+      }
+    },
+    "mark": {
+        "type": "line",
+        "color": "rosybrown"
+      },
+    "encoding": {
+      "x": {"field": "year_year_year", "type": "nominal", "title": "", "axis": {"labelAngle": 70}},
+  
+      "y": {"field": "united_kingdom_all_pay_gap_percent", "type": "quantitative", "scale": {"domain": [0, 100]}, "title": "Pay Gap (%)"}
+    }
+      }
+  
