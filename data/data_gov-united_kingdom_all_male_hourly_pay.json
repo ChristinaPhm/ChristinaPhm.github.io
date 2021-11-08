@@ -1,0 +1,136 @@
+{
+    "info": {
+        "total": 21,
+        "rows": 21,
+        "offset": 0,
+        "limit": 100,
+        "page": 1,
+        "pages": 1,
+        "sql": "SELECT\n  _row_id,\n  year_year_year,\n  united_kingdom_all_male_hourly_pay\nFROM dataset;",
+        "title": "Gender Pay Gap for London & the UK - Median"
+    },
+    "fields": [
+        {
+            "id": "_row_id",
+            "datatype": "integer",
+            "title": "Row #"
+        },
+        {
+            "id": "year_year_year",
+            "datatype": "integer",
+            "title": "Year Year Year"
+        },
+        {
+            "id": "united_kingdom_all_male_hourly_pay",
+            "datatype": "real",
+            "title": "United Kingdom All Male Hourly Pay (£)"
+        }
+    ],
+    "rows": [
+        {
+            "_row_id": 1,
+            "year_year_year": 1997,
+            "united_kingdom_all_male_hourly_pay": 8.17
+        },
+        {
+            "_row_id": 2,
+            "year_year_year": 1998,
+            "united_kingdom_all_male_hourly_pay": 8.49
+        },
+        {
+            "_row_id": 3,
+            "year_year_year": 1999,
+            "united_kingdom_all_male_hourly_pay": 8.81
+        },
+        {
+            "_row_id": 4,
+            "year_year_year": 2000,
+            "united_kingdom_all_male_hourly_pay": 9.06
+        },
+        {
+            "_row_id": 5,
+            "year_year_year": 2001,
+            "united_kingdom_all_male_hourly_pay": 9.48
+        },
+        {
+            "_row_id": 6,
+            "year_year_year": 2002,
+            "united_kingdom_all_male_hourly_pay": 9.92
+        },
+        {
+            "_row_id": 7,
+            "year_year_year": 2003,
+            "united_kingdom_all_male_hourly_pay": 10.21
+        },
+        {
+            "_row_id": 8,
+            "year_year_year": 2004,
+            "united_kingdom_all_male_hourly_pay": 10.54
+        },
+        {
+            "_row_id": 9,
+            "year_year_year": 2005,
+            "united_kingdom_all_male_hourly_pay": 10.77
+        },
+        {
+            "_row_id": 10,
+            "year_year_year": 2006,
+            "united_kingdom_all_male_hourly_pay": 11.15
+        },
+        {
+            "_row_id": 11,
+            "year_year_year": 2007,
+            "united_kingdom_all_male_hourly_pay": 11.48
+        },
+        {
+            "_row_id": 12,
+            "year_year_year": 2008,
+            "united_kingdom_all_male_hourly_pay": 11.97
+        },
+        {
+            "_row_id": 13,
+            "year_year_year": 2009,
+            "united_kingdom_all_male_hourly_pay": 12.4
+        },
+        {
+            "_row_id": 14,
+            "year_year_year": 2010,
+            "united_kingdom_all_male_hourly_pay": 12.34
+        },
+        {
+            "_row_id": 15,
+            "year_year_year": 2011,
+            "united_kingdom_all_male_hourly_pay": 12.41
+        },
+        {
+            "_row_id": 16,
+            "year_year_year": 2012,
+            "united_kingdom_all_male_hourly_pay": 12.5
+        },
+        {
+            "_row_id": 17,
+            "year_year_year": 2013,
+            "united_kingdom_all_male_hourly_pay": 12.85
+        },
+        {
+            "_row_id": 18,
+            "year_year_year": 2014,
+            "united_kingdom_all_male_hourly_pay": 12.82
+        },
+        {
+            "_row_id": 19,
+            "year_year_year": 2015,
+            "united_kingdom_all_male_hourly_pay": 13
+        },
+        {
+            "_row_id": 20,
+            "year_year_year": 2016,
+            "united_kingdom_all_male_hourly_pay": 13.35
+        },
+        {
+            "_row_id": 21,
+            "year_year_year": 2017,
+            "united_kingdom_all_male_hourly_pay": 13.72
+        }
+    ]
+}

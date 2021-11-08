@@ -1,0 +1,136 @@
+{
+    "info": {
+        "total": 21,
+        "rows": 21,
+        "offset": 0,
+        "limit": 100,
+        "page": 1,
+        "pages": 1,
+        "sql": "SELECT\n  _row_id,\n  year_year_year,\n  united_kingdom_all_female_hourly_pay\nFROM dataset;",
+        "title": "Gender Pay Gap for London & the UK - Median"
+    },
+    "fields": [
+        {
+            "id": "_row_id",
+            "datatype": "integer",
+            "title": "Row #"
+        },
+        {
+            "id": "year_year_year",
+            "datatype": "integer",
+            "title": "Year Year Year"
+        },
+        {
+            "id": "united_kingdom_all_female_hourly_pay",
+            "datatype": "real",
+            "title": "United Kingdom All Female Hourly Pay (£)"
+        }
+    ],
+    "rows": [
+        {
+            "_row_id": 1,
+            "year_year_year": 1997,
+            "united_kingdom_all_female_hourly_pay": 5.92
+        },
+        {
+            "_row_id": 2,
+            "year_year_year": 1998,
+            "united_kingdom_all_female_hourly_pay": 6.17
+        },
+        {
+            "_row_id": 3,
+            "year_year_year": 1999,
+            "united_kingdom_all_female_hourly_pay": 6.43
+        },
+        {
+            "_row_id": 4,
+            "year_year_year": 2000,
+            "united_kingdom_all_female_hourly_pay": 6.64
+        },
+        {
+            "_row_id": 5,
+            "year_year_year": 2001,
+            "united_kingdom_all_female_hourly_pay": 6.98
+        },
+        {
+            "_row_id": 6,
+            "year_year_year": 2002,
+            "united_kingdom_all_female_hourly_pay": 7.25
+        },
+        {
+            "_row_id": 7,
+            "year_year_year": 2003,
+            "united_kingdom_all_female_hourly_pay": 7.65
+        },
+        {
+            "_row_id": 8,
+            "year_year_year": 2004,
+            "united_kingdom_all_female_hourly_pay": 7.94
+        },
+        {
+            "_row_id": 9,
+            "year_year_year": 2005,
+            "united_kingdom_all_female_hourly_pay": 8.33
+        },
+        {
+            "_row_id": 10,
+            "year_year_year": 2006,
+            "united_kingdom_all_female_hourly_pay": 8.67
+        },
+        {
+            "_row_id": 11,
+            "year_year_year": 2007,
+            "united_kingdom_all_female_hourly_pay": 8.97
+        },
+        {
+            "_row_id": 12,
+            "year_year_year": 2008,
+            "united_kingdom_all_female_hourly_pay": 9.28
+        },
+        {
+            "_row_id": 13,
+            "year_year_year": 2009,
+            "united_kingdom_all_female_hourly_pay": 9.67
+        },
+        {
+            "_row_id": 14,
+            "year_year_year": 2010,
+            "united_kingdom_all_female_hourly_pay": 9.89
+        },
+        {
+            "_row_id": 15,
+            "year_year_year": 2011,
+            "united_kingdom_all_female_hourly_pay": 9.9
+        },
+        {
+            "_row_id": 16,
+            "year_year_year": 2012,
+            "united_kingdom_all_female_hourly_pay": 10.05
+        },
+        {
+            "_row_id": 17,
+            "year_year_year": 2013,
+            "united_kingdom_all_female_hourly_pay": 10.31
+        },
+        {
+            "_row_id": 18,
+            "year_year_year": 2014,
+            "united_kingdom_all_female_hourly_pay": 10.36
+        },
+        {
+            "_row_id": 19,
+            "year_year_year": 2015,
+            "united_kingdom_all_female_hourly_pay": 10.49
+        },
+        {
+            "_row_id": 20,
+            "year_year_year": 2016,
+            "united_kingdom_all_female_hourly_pay": 10.92
+        },
+        {
+            "_row_id": 21,
+            "year_year_year": 2017,
+            "united_kingdom_all_female_hourly_pay": 11.2
+        }
+    ]
+}
