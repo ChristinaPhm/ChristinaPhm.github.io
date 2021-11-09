@@ -8,6 +8,7 @@
     "mark": "bar",
     "width": "container",
     "height": 300,
+    "width": 310,
     "title": {
       "text": "UK CO2 emissions – by sector",
       "subtitle": "Millon tonnes. 1990-2019. Source: Gov.uk (BEIS)",
