@@ -14,6 +14,9 @@
     "color": "saddlebrown"
   },
 
+    "height": 300,
+    "width": 310,
+  
     "data": {"url": "https://api.v2.emissions-api.org/api/v2/carbonmonoxide/average.json?country=gb&begin=2019-02-01&end=2022-07-01"},
   
     "mark":{
