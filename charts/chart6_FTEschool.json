@@ -10,6 +10,9 @@
     "anchor": "start",
     "color": "black"
   },
+  
+  "height": 300,
+  "width": 310,
 
   "data": {
     "values": [
