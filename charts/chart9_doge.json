@@ -10,6 +10,9 @@
     "anchor": "start",
     "color": "maroon"
   },
+    
+    "height": 300,
+    "width": 310,
       
     "data": {"url": "https://rest.coinapi.io/v1/ohlcv/DOGE/USD/history?period_id=8HRS&time_start=2021-01-01T00:00:00&limit=1000&include_empty_items=false&apikey=FCB2BB27-5458-483B-88CE-926C357E0606"},
     
