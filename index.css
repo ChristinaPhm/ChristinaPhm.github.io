@@ -31,14 +31,15 @@ color: rgb(255, 255, 255);
 
 .bcontainer {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;;
+  flex-flow: column;
+  justify-content: center;
   gap: 30px 30px;
   margin-top: 30px;
   border-style: solid;
   border-color: rgb(129, 116, 116);
-  padding: 30px;
-  border-radius: 100px;
+  padding: 25px;
+  border-radius: 35px;
+    
 }
 
 .chart {
