@@ -73,7 +73,7 @@ p{
     	align-content: center;
 	display: flex;
 	justify-content: center;
-	flex-flow: row wrap;
+	flex-flow: row;
 	position: relative;
   	left: 120px;
   	width: 80%;
