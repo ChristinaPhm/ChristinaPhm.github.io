@@ -93,9 +93,10 @@
   <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Skill 1: </span>Getting started</h2>
     
 <!--Chart 1 -->
-    <div class="chart" id="chart1">
-        <h3>Covid-19 Cases</h3>
+  <div class="box">
+    <h3>Covid-19 Cases</h3>
         <p>Here is my first interactive chart which looks at Covid-19 cases in UK regions.</p>
+    <div class="chart" id="chart1">
         <script>
           //Following the script tag, we are now using Javascript
           //One way to tell is to see how comments work
@@ -105,28 +106,33 @@
           vegaEmbed('#chart1', myChart1);
         </script>
     </div>
+  </div>
 
-<!--Chart 2 -->    
-  <div class="chart" id="chart2">
-      <h3>UK Productivity</h3>
+<!--Chart 2 -->   
+ <div class="box">
+  <h3>UK Productivity</h3>
       <p>My second chart displays the pattern of UK labour productivity over the past few years.</p>
+     <div class="chart" id="chart2">
       <script>
         var myChart2 = "charts/chart2_ukProductivity.json";
         vegaEmbed('#chart2', myChart2);
      </script>
  </div>
+</div>
   
     
   <!--Chart 3 -->
-  <div class="chart" id="chart3">
-    <h3>Bitcoin</h3>
+  <div class="box">
+  <h3>Bitcoin</h3>
       <p>This third chart shows the trend of the daily BTC price of Bitcoin.
         This chart is also interactive, with sliders that can change the period of which the chart looks at. </p>
+    <div class="chart" id="chart3">
     <script>
       var myChart3 = "charts/chart3_crypto.json";
       vegaEmbed('#chart3', myChart3);
     </script>
    </div>
+  </div>
   
 </container>
     
@@ -136,27 +142,31 @@
   <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Skill 2: </span>Hosting Data</h2>
     
 <!--Chart 4 -->
-  <div class="chart" id="chart4">
-    <h3>UK Full Vaccinations</h3>
+ <div class="box">
+  <h3>UK Full Vaccinations</h3>
       <p>My fourth chart highlights the cummulative number of people which have been fully vaccinated in the following regions.
         This chart was hosted from a given API.</p>
+    <div class="chart" id="chart4">
     <script>
       var myChart4 = "charts/chart_Week2_covidVacc.json";
       vegaEmbed('#chart4', myChart4);
     </script>
   </div>
+ </div>
 
     
 <!--Chart 5 -->
-  <div class="chart" id="chart5">
-    <h3>London New COVID Cases</h3>
+ <div class="box">
+  <h3>London New COVID Cases</h3>
       <p>This fifth chart displays the trend of new cases occuring in London.
          This chart was embedded from my own raw data.</p>
+    <div class="chart" id="chart5">
     <script>
       var myChart5 = "charts/chart_Week2_newCasesLdn.json";
       vegaEmbed('#chart5', myChart5);
     </script>
   </div>
+ </div>
     
 </container>
     
@@ -166,27 +176,30 @@
   <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Skill 3: </span>Editing Data & Writing JSON by hand</h2>
     
 <!--Chart 6 -->
-  <div class="chart" id="chart6">
-    <h3>South West Primary Schools Remote Learning</h3>
+ <div class="box">
+  <h3>South West Primary Schools Remote Learning</h3>
       <p>This sixth chart highlights the effect of the pandemic on in-person/online teaching using the measure of FTE on schools in the South West.
          This chart was made by writing the data in JSON by hand.</p>
+    <div class="chart" id="chart6">
     <script>
       var myChart6 = "charts/chart6_FTEschool.json";
       vegaEmbed('#chart6', myChart6);
     </script>
   </div>
-    
+ </div>
     
 <!--Chart 7 -->
-  <div class="chart" id="chart7">
-    <h3>CO2 Emissions in the UK</h3>
+ <div class="box">
+  <h3>CO2 Emissions in the UK</h3>
       <p>This seventh chart displays the level of CO2 emissions created by different sectors across the UK.
         The data from this chart was embedded with raw data, which included an observation that I added (for 2020).</p>
+    <div class="chart" id="chart7">
     <script>
       var myChart7 = "charts/chart7_co2emissions.json";
       vegaEmbed('#chart7', myChart7);
     </script>
   </div>
+ </div>
   
 </container>
 
@@ -196,27 +209,30 @@
   <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Skill 4: </span>API Driven Charts</h2>
   
 <!--Chart 8 -->
-  <div class="chart" id="chart8">
-    <h3>UK Emissions</h3>
+ <div class="box">
+  <h3>UK Emissions</h3>
       <p>This eighth chart displays UK emissions data that was taken through satellite imagery.
          This chart was made by using an API URL.</p>
+    <div class="chart" id="chart8">
     <script>
       var myChart8 = "charts/chart8_emissions.json";
       vegaEmbed('#chart8', myChart8);
     </script>
   </div>
+ </div>
     
-  
-  <div class="chart" id="chart9">
-    <h3>Doge Stock Prices 2021</h3>
+<!--Chart 9 -->  
+ <div class="box">
+  <h3>Doge Stock Prices 2021</h3>
       <p>This ninth chart displays the change of Dogecoin stock prices this year.
         This was also made using an API which I had signed up for.</p>
-<!--Chart 9 -->
+  <div class="chart" id="chart9">
     <script>
       var myChart9 = "charts/chart9_doge.json";
       vegaEmbed('#chart9', myChart9);
     </script>
   </div> 
+ </div>
   
 </container>  
     
@@ -226,15 +242,17 @@
   <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Skill 5: </span>Using Loops</h2>
   
 <!--Chart 10 -->
-  <div class="chart" id="chart10">
-    <h3>UK Gender Pay Gap</h3>
+ <div class="box">
+  <h3>UK Gender Pay Gap</h3>
       <p>This tenth chart displays the pattern of gender pay gap in the UK between 1997 to 2017.
         This was made through a raw Github URL generated with Python loops.</p>
+    <div class="chart" id="chart10">
     <script>
       var myChart10 = "charts/chart10_paygap.json";
       vegaEmbed('#chart10', myChart10);
     </script>
   </div> 
+ </div>
   
   
 </container>    
@@ -244,12 +262,18 @@
 <container class="hcontainer">
   <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Skill 7: </span>Scrapers</h2>
   
+  <div class="box">
+  </div>
+    
   </container> 
     
     
     
 <container class="hcontainer">
   <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Skill 8: </span>Data Stories</h2>
+  
+  <div class="box">
+ </div>
   
   </container> 
 
