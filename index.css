@@ -6,6 +6,10 @@ body{
     background-color: #a19086 ;
     max-width: 100%;
     margin: auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+
 }
 
 h1{
@@ -62,7 +66,7 @@ p{
 
 .hcontainer {
     
-    align-content: center;
+    	align-content: center;
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
