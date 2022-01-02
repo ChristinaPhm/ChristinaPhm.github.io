@@ -6,9 +6,6 @@ body{
     background-color: #a19086 ;
     max-width: 100%;
     margin: auto;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
 
 }
 
@@ -64,7 +61,11 @@ p{
 }
 
 .main-body{
-	margin-top:50%;
+    margin-top:50%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+	
 }
 
 .hcontainer {
