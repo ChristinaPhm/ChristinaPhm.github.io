@@ -1,0 +1,98 @@
+  {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Chart showing UK average house prices over time",
+  "title": {
+    "text": "Average UK House Prices",
+    "subtitle": "Source: Office for National Statistics – House Price Index",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "subtitleColor": "rebeccapurple",
+    "anchor": "start",
+    "color": "purple"
+  },
+
+
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChristinaPhm/ChristinaPhm.github.io/main/data/houseprices.csv"
+  },
+
+
+  "width": 300,
+  "height": 300,
+
+  "layer": [
+    {
+      "encoding": {
+        "x": {"field": "year", "type": "temporal", "title": "Year"},
+        "y": {
+          "field": "price",
+          "type": "quantitative",
+          "title": "Average Price (£)"
+        },
+        "color": {
+          "field": "priceType",
+          "type": "nominal",
+          "scale": {"scheme": "purplered"},
+          "title": "Prices (inflation)"
+        }
+      },
+      "layer": [
+        {"mark": "line"},
+        {
+          "params": [
+            {
+              "name": "label",
+              "select": {
+                "type": "point",
+                "encodings": ["x"],
+                "nearest": true,
+                "on": "mouseover"
+              }
+            }
+          ],
+          "mark": "point",
+          "encoding": {
+            "opacity": {
+              "condition": {"param": "label", "empty": false, "value": 1},
+              "value": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "transform": [{"filter": {"param": "label", "empty": false}}],
+      "layer": [
+        {
+          "mark": {"type": "rule", "color": "gray"},
+          "encoding": {
+            "x": {"type": "temporal", "field": "year", "aggregate": "min"}
+          }
+        },
+        {
+          "encoding": {
+            "text": {"type": "quantitative", "field": "price"},
+            "x": {"type": "temporal", "field": "year"},
+            "y": {"type": "quantitative", "field": "price"}
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "text",
+                "stroke": "white",
+                "strokeWidth": 2,
+                "align": "left",
+                "dx": 5,
+                "dy": -5
+              }
+            },
+            {
+              "mark": {"type": "text", "align": "left", "dx": 5, "dy": -5},
+              "encoding": {"color": {"type": "nominal", "field": "priceType"}}
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
