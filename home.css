@@ -1,0 +1,118 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  margin-top:250px;
+  font-size:30px;
+  padding-top: 0px;
+  background-color: #f0dddd;
+}
+
+.header{
+  text-align: center;
+  line-height: 42px;
+  border: none;
+  background-color: #3b2926;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.main {
+  padding:35px 35px 2500px;
+  font-size:30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #f0dddd;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #3b2926;
+  padding: 300px 10px;
+  transition: 0.8s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  border-bottom: rgb(0, 0, 0);
+  border-width: 5px;
+  border-style:solid;
+}
+
+#navbar #logo {
+  font-size: 60px;
+  font-weight: bold;
+  transition: 0.5s;
+  background-color: transparent;
+  color: rgb(255, 187, 0);
+  border: transparent;
+  padding-left: 150px;
+  line-height: 40px;
+}
+
+#navbar-right {
+  float: right;
+}
+
+button {
+  margin: 20px;
+  outline: none;
+}
+
+.custom {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  background: transparent;
+  cursor: arrow;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  font-size: 25px;
+}
+
+.btn-active {
+  line-height: 40px;
+  padding: 0;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.btn {
+  background: transparent;
+  color: rgb(255, 187, 0);
+  line-height: 40px;
+  padding: 0;
+  border: none;
+}
+.btn:hover {
+  background: transparent;
+  color: rgb(255, 187, 0);
+}
+.btn:before,
+.btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(255, 187, 0);
+  transition:400ms ease all;
+}
+.btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn:hover:before,
+.btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
