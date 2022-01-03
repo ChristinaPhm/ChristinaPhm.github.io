@@ -203,7 +203,7 @@ a:active {
 
 .navigation:hover,
 .navigation.active {
-  width: 14%;
+  width: 250px;
 }
 
 .navigation ul {
