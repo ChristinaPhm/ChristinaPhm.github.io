@@ -38,12 +38,15 @@ p{
 .title-bar{
   position: absolute;
   top:0%;
-  left: 15%;
+  margin-left: 10%;
+  margin-right: 0%;
+  padding:2px 15px;
   width:85%;
   margin: 0;
   background-color: none; /*#FFFAF0 */
   height: auto;
-  line-height:0
+  line-height: 0;
+
   }
 
 .title-bar h1{ 
