@@ -34,7 +34,30 @@ p{
     color: rgb(255, 255, 255);
 }
 
+/*Hyperlinks */
+a:link {
+  color: #ad8c7d;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #ad8c7d;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
+
+/*Title Bar */
 .title-bar{
   position: absolute;
   top:0%;
@@ -63,6 +86,8 @@ p{
     color: #a8897b;
 }
 
+
+/*Rest */
 .main-body{
     margin-top:15%;
     text-align: center;
@@ -142,7 +167,7 @@ p{
 	
 }
 
-/*inspired by Chris Brierley */
+/*Navigation bar - inspired by Chris Brierley */
 .navigation {
   position: fixed;
   margin: 0;
@@ -221,7 +246,7 @@ p{
   white-space: nowrap;
 }
 
-
+/*Charts */
 .chart {
     
   background-color: white;
