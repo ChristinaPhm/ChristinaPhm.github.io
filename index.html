@@ -68,16 +68,60 @@
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
 
 <body>
-  <ul>
-    <li><a class="active" href="index.html"><i class="fa fa-user-o"></i> Home</a></li>
-    <li><a href="project"><i class="fa fa-pencil-square-o"></i> Project</a></li>
-    <li><a href="https://github.com/ChristinaPhm/ChristinaPhm.github.io"><i class="fa fa-folder-open"></i> Github</a></li>
-    <li><a href="https://rapidcharts.io/datascience"><i class="fa fa-book"></i> Course</a></li>
-  </ul>
+  
+<!--Navigation bar and title-->
+  <div class="navigation">
+      <ul>
+        <li>
+          <a href="index.html">
+            <span class="icon"><i class="fas fa-home"></i></span>
+            <span class="title">Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="active" href="portfolio.html">
+            <span class="icon"><i class="fas fa-code"></i></span>
+            <span class="title">Portfolio</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="project">
+            <span class="icon"><i class="fas fa-running"></i></span>
+            <span class="title">Project</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://rapidcharts.io/datascience">
+            <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+            <span class="title">Course</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/ChristinaPhm/ChristinaPhm.github.io">
+            <span class="icon"><i class="fab fa-github"></i></span>
+            <span class="title">Github</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="toggle" onclick="toggleMenu()"></div>
+    <script type="text/javascript">
+      function toggleMenu() {
+        let navigation = document.querySelector('.navigation');
+        let toggle = document.querySelector('.toggle')
+        navigation.classList.toggle('active');
+        toggle.classList.toggle('active');
+      }
+    </script>
   
   <div style="margin-left:17%;margin-right:10%;padding:2px 15px;height:1000px;">
     
-  <!--Navigation bar and title-->
     
    <header> 
    <div class="title-bar">
