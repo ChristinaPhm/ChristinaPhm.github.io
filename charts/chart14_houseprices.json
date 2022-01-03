@@ -1,6 +1,7 @@
   {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  
+  "description": "Chart showing UK average house prices over time",
+
     "title": {
     "text": "Average UK House Prices",
     "subtitle": "Source: Office for National Statistics – House Price Index",
