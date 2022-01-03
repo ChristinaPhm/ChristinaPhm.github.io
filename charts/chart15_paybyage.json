@@ -1,5 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  
   "title": {
     "text": "Gender Pay Gap for Full-time Employees, by age-group",
     "subtitle": "Office for National Statistics – Annual Survey of Hours and Earnings",
@@ -9,11 +10,14 @@
     "anchor": "start",
     "color": "indigo"
   },
+  
   "data": {
     "url": "https://raw.githubusercontent.com/ChristinaPhm/ChristinaPhm.github.io/main/data/paygap_by_age.csv"
   },
+  
   "width": 400,
   "height": 300,
+  
   "layer": [
     {
       "encoding": {
