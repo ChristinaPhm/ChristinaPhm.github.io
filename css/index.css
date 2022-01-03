@@ -89,7 +89,7 @@ p{
     
 }
 
-#container1 #container2 {
+#container1{
 	
 	align-content: center;
 	display: flex;
@@ -106,6 +106,27 @@ p{
 	padding: 30px;
 	
 }
+
+
+#container2{
+	
+	align-content: center;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	position: relative;
+  	left: 120px;
+  	width: 80%;
+  	text-align: center;
+  	border: 3px solid rgb(129, 116, 116);
+  	border-top: none;
+  	border-left: none;
+  	border-right: none;
+	padding: 30px;
+	
+}
+
+	
 
 .box {
 	
