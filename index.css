@@ -41,7 +41,7 @@ p{
   left: 15%;
   width:85%;
   margin: 0;
-  background-color:#FFFAF0;
+  background-color: none; /*#FFFAF0 */
   height: auto;
   line-height:0
   }
