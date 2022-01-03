@@ -84,6 +84,7 @@ a:active {
     font-weight: bold;
     margin: 50px;
     color: #a8897b;
+    white-space: nowrap;
 }
 
 
