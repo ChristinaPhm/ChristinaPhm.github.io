@@ -12,7 +12,16 @@ h1{
 
     color: rgb(161, 144, 134);
     font-family: 'Lato', sans-serif ;
+    font-size: 60px;
 }
+
+
+h2{
+
+    color: rgb(255, 255, 255);
+    font-family: 'Lato', sans-serif;
+}
+
 
 h3{
     color: #a19086;
@@ -24,17 +33,198 @@ color: rgb(70, 65, 65);
 }
 
 
+.title-bar{
+  position: absolute;
+  top:0%;
+  margin-left: 10%;
+  margin-right: 0%;
+  padding:2px 15px;
+  width:85%;
+  margin: 0;
+  background-color: none; /*#FFFAF0 */
+  height: auto;
+  line-height: 0;
 
-.chart{
-    width: 350px;
-    border-width: 10px;
-    background-color: white;
-    border-style: solid;
-    border-radius: 5px;
-    border-color: white;
-    margin: auto;
+  }
 
+.title-bar h1{ 
+  font-size: 65px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 50px;
+  }
 
+.title-bar p{ 
+    font-size: 20px;
+    font-weight: bold;
+    margin: 50px;
+    color: #a8897b;
 }
+
+.main-body{
+    margin-top:15%;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+	
+}
+
+.hcontainer {
+    
+    	align-content: center;
+	display: flex;
+	justify-content: center;
+	flex-flow: row;
+	position: relative;
+  	left: 120px;
+  	width: 80%;
+  	text-align: center;
+  	border: 3px solid rgb(129, 116, 116);
+  	border-top: none;
+  	border-left: none;
+  	border-right: none;
+	padding: 30px;
+    
+}
+
+#container1{
+	
+	align-content: center;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	position: relative;
+  	left: 120px;
+  	width: 80%;
+  	text-align: center;
+  	border: 3px solid rgb(129, 116, 116);
+  	border-top: none;
+  	border-left: none;
+  	border-right: none;
+	padding: 30px;
+	
+}
+
+.box {
+	
+  box-sizing: border-box;
+  background-color: none;
+  width: auto;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  max-width: 500px;
+	
+}
+
+/*inspired by Chris Brierley */
+.navigation {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 100%;
+  background: #7a6a6a no-repeat center fixed;
+  transition: 0.5s;
+  overflow: hidden;
+  color: #7a6a6a;
+  font-family: 'Lato', sans-serif;
+}
+
+.navigation:hover,
+.navigation.active {
+  width: 15%;
+}
+
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+
+.navigation ul li:hover {
+  background: #555;
+  transition: 0.5s ease;
+  color: #555
+}
+
+.navigation ul li a {
+  position: relative;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #3d3c3c;
+}
+
+.navigation ul li a:hover {
+  color: white;
+}
+
+.navigation li a.active {
+    background-color: #cea796;
+    color: white;
+    font-weight: 900;
+}
+
+.navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.navigation ul li a .icon .fa {
+  font-size: 24px;
+}
+
+.navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding: 0 10px;
+  height: 60px;
+  line-height: 60px;
+  text-align: start;
+  white-space: nowrap;
+}
+
+
+.chart {
+    
+  background-color: white;
+  width: auto;
+  min-width: auto;
+  align-items: center;
+  justify-content: center;
+  position:static;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px;
+  flex-flow: row wrap;
+  
+}
+
+.chart:hover {
+    
+      transform: scale(1.04, 1.04);
+      transition: 0.6s;
+      
+    }
+
 
 
