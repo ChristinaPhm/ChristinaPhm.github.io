@@ -2,41 +2,29 @@
 
 body { 
   margin: 0;
-  margin-top:250px;
   font-size:30px;
   padding-top: 0px;
-  background-color: #f0dddd;
 }
 
 .header{
   text-align: center;
   line-height: 42px;
   border: none;
-  background-color: #3b2926;
   color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
-.main {
-  padding:35px 35px 2500px;
-  font-size:30px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #f0dddd;
-  text-align: center;
-}
 
 #navbar {
   overflow: hidden;
-  background-color: #3b2926;
+  background: linear-gradient(132deg, #e8c2bc, #c78377, #c79e77);
+  background-animation: Gradient 10s ease infinite;
   padding: 300px 10px;
   transition: 0.8s;
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 99;
-  border-bottom: rgb(0, 0, 0);
-  border-width: 5px;
-  border-style:solid;
+  bottom: 0;
 }
 
 #navbar #logo {
@@ -44,7 +32,7 @@ body {
   font-weight: bold;
   transition: 0.5s;
   background-color: transparent;
-  color: rgb(255, 187, 0);
+  color: #f0dddd;
   border: transparent;
   padding-left: 150px;
   line-height: 40px;
@@ -78,21 +66,21 @@ button {
   line-height: 40px;
   padding: 0;
   border: none;
-  background-color: rgb(0, 0, 0);
-  color: rgb(0, 0, 0);
+  background-color: transparent;
+  color: none;
   font-weight: bold;
 }
 
 .btn {
   background: transparent;
-  color: rgb(255, 187, 0);
+  color: #f0dddd;
   line-height: 40px;
   padding: 0;
   border: none;
 }
 .btn:hover {
   background: transparent;
-  color: rgb(255, 187, 0);
+  color: #663b33;
 }
 .btn:before,
 .btn:after{
@@ -102,7 +90,7 @@ button {
   right:0;
   height:2px;
   width:0;
-  background: rgb(255, 187, 0);
+  background: #663b33;
   transition:400ms ease all;
 }
 .btn:after{
@@ -116,3 +104,32 @@ button {
   width:100%;
   transition:800ms ease all;
 }
+
+.bg {
+  animation:slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #deada2 50%, #9c9686 50%);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
+.bg2 {
+  animation-direction:alternate-reverse;
+  animation-duration:4s;
+}
+
+.bg3 {
+  animation-duration:5s;
+}
+
+@keyframes slide {
+  0% {
+    transform:translateX(-25%);
+  }
+  100% {
+    transform:translateX(25%);
+  }
