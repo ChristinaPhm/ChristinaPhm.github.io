@@ -1,0 +1,34 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A line chart displaying female hourly pay.",
+  
+    "title": {
+      "text": "UK Female Hourly Pay",
+      "subtitle": ["Female hourly pay statistics for the UK calculated using earnings data from", "ONS's Annual Survey of Hours and Earnings."],
+      "subtitleFontStyle":"italic",
+      "subtitleFontSize":10,
+      "subtitleColor": "pink",
+      "anchor": "start",
+      "color": "palevioletred"
+    },
+  
+    "height": 300,
+    "width": 310,
+    
+      "data": {
+        "url": "https://data.london.gov.uk/api/table/7bmts_r53zv?$select=_row_id,year_year_year,united_kingdom_all_female_hourly_pay",
+        "format": {
+          "property": "rows"
+      }
+    },
+    "mark": {
+        "type": "line",
+        "color": "lightpink"
+      },
+    "encoding": {
+      "x": {"field": "year_year_year", "type": "nominal", "title": "", "axis": {"labelAngle": 70}},
+  
+      "y": {"field": "united_kingdom_all_female_hourly_pay", "type": "quantitative", "scale": {"domain": [0, 30]}, "title": "Pay Gap (%)"}
+    }
+      }
+  
