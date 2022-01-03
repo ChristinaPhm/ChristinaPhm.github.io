@@ -89,7 +89,7 @@ p{
     
 }
 
-#container1{
+#container1 #container2 {
 	
 	align-content: center;
 	display: flex;
