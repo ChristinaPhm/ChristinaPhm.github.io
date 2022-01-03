@@ -200,9 +200,9 @@ p{
 
 .chart {
     
-  background-color: none;
-  width: 280px;
-  min-width: 500px;
+  background-color: white;
+  width: auto;
+  min-width: auto;
   align-items: center;
   justify-content: center;
   position:static;
