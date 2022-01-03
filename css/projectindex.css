@@ -59,6 +59,7 @@ color: rgb(70, 65, 65);
     font-weight: bold;
     margin: 50px;
     color: #a8897b;
+    white-space: nowrap;
 }
 
 .main-body{
