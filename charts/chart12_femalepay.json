@@ -28,7 +28,7 @@
     "encoding": {
       "x": {"field": "year_year_year", "type": "nominal", "title": "", "axis": {"labelAngle": 70}},
   
-      "y": {"field": "united_kingdom_all_female_hourly_pay", "type": "quantitative", "scale": {"domain": [0, 30]}, "title": "Pay Gap (%)"}
+      "y": {"field": "united_kingdom_all_female_hourly_pay", "type": "quantitative", "scale": {"domain": [0, 16]}, "title": "Hourly Wage (£)"}
     }
       }
   
