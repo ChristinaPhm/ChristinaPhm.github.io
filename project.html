@@ -10,51 +10,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Christina Pham's DS Project</title>
+  <title>c|p</title>
 
   <link rel="stylesheet" href="projectindex.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="favicon.png">
-  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <style>
   @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-    
-  body {
-      margin: 0;
-    }
-    
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 15%;
-    background-color: #7a6a6a;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
-    font-family: 'Lato', sans-serif;
-  }
-
-  li a {
-    display: block;
-    color: #3d3c3c;
-    padding: 8px 16px;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-  }
-
-  li a.active {
-    background-color: #cea796;
-    color: white;
-    font-weight: 900;
-  }
-
-  li a:hover:not(.active) {
-    background-color: #555;
-    color: white;
-
-  }
-
     
   </style>
 
@@ -68,25 +31,88 @@
 <!-- ///////////////////  START BODY //////////////////////////////////// -->
 
 <body>
-  <ul>
-    <li><a href="index.html"><i class="fa fa-user-o"></i> Home</a></li>
-    <li><a class="active" href="project"><i class="fa fa-pencil-square-o"></i> Project</a></li>
-    <li><a href="https://github.com/ChristinaPhm/ChristinaPhm.github.io"><i class="fa fa-folder-open"></i> Github</a></li>
-    <li><a href="https://rapidcharts.io/datascience"><i class="fa fa-book"></i> Course</a></li>
-  </ul>
   
-  <div style="margin-left:50%;padding:2px 15px;height:1000px;">
-  <!--Navigation bar and title-->
-    <header>
-    <h1>ECON30006: Data Visualisation Project</h1>
-    <p><strong>Christina Pham</strong></p>
+<!--Navigation bar and title-->
+  <div class="navigation">
+      <ul style= "padding-left: 0px;">
+        <li>
+          <a href="index.html">
+            <span class="icon"><i class="fa fa-home"></i></span>
+            <span class="title">Home</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="portfolio.html">
+            <span class="icon"><i class="fa fa-code"></i></span>
+            <span class="title">Portfolio</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="active" href="project">
+            <span class="icon"><i class="fa fa-book"></i></span>
+            <span class="title">Project</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://rapidcharts.io/datascience">
+            <span class="icon"><i class="fa fa-graduation-cap"></i></span>
+            <span class="title">Course</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/ChristinaPhm/ChristinaPhm.github.io">
+            <span class="icon"><i class="fa fa-github"></i></span>
+            <span class="title">Github</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  <div style="margin-left:15%;margin-right:5%;padding:2px 15px;height:1000px;">
+  
+   <header> 
+   <div class="title-bar">
+        <h1>Data</h1>
+        <h1 style="color: rgb(65, 48, 34)"><b>Project</b></h1>
+        <p>Christina Pham | Student ID: 1909145</p>
+  </div>
     </header>
   
-    <h3>Introduction</h3>
-        
-    <p>Project demo page text here.</p>
-
+   
+    <div class="main-body"> 
     
+<container class="hcontainer">
+    </container>
+     
+<container class="hcontainer">
+  <h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">Question: </span>???</h2>
+    </container>  
+  
+<container class="hcontainer" id="container1">  
+<!--Chart 1 -->
+  <div class="box">
+    <h3>Title</h3>
+        <p>Example chart.</p>
+    <div class="chart" id="chart1">
+        <script>
+          //Following the script tag, we are now using Javascript
+          //One way to tell is to see how comments work
+          //First job is to set the chart as a JS variable
+          var myChart1 = "charts/chart1_covidUKRegions.json";
+          //Now we simply insert it, using Vega's embed code:
+          vegaEmbed('#chart1', myChart1);
+        </script>
+    </div>
+  </div>
+
+
+</div>
+
 </body>
 <!-- ///////////////////  END BODY //////////////////////////////////// -->
 
