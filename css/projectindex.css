@@ -32,6 +32,28 @@ p{font-family: 'Lato', sans-serif;
 color: rgb(70, 65, 65);
 }
 
+/*Hyperlinks */
+a:link {
+  color: #ad8c7d;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: #ad8c7d;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: pink;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
 
 .title-bar{
   position: absolute;
