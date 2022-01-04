@@ -90,19 +90,24 @@
     </container>
      
 <container class="hcontainer">
-  <img src="projectq.png" alt="Does the US systematically discourage social mobility?" width="900" height="100">
+  <img src="projectq.png" alt="Does the US systematically discourage economic mobility?" width="900" height="100">
   </container>  
   
 <container class="hcontainer" id="container1">  
+  
+   <h2 class="bodyText">Project <span style="color: rgb(65, 48, 34); font-weight: 700;">Aims</span></h2>
+   <p>Economic mobility is an key factor in the creation of a vibrant society and a healthy economy. It is also a globally universal issue, which most countries are
+     not even close to solving - some who even exacerbate the problem. In this project, I aim to discuss whether the United States falls into that category of countries which
+     discourage economic mobility. The definition of economic mobility I will be using here is <a href="https://en.wikipedia.org/wiki/Economic_mobility">"the ability of an individual, family or some other group 
+     to improve (or lower) their economic status—usually measured in income"</a>.</p>
+     
+  
 <!--Chart 1 -->
   <div class="box">
     <h3>Title</h3>
         <p>Example chart.</p>
     <div class="chart" id="chart1">
         <script>
-          //Following the script tag, we are now using Javascript
-          //One way to tell is to see how comments work
-          //First job is to set the chart as a JS variable
           var myChart1 = "charts/chart1_covidUKRegions.json";
           //Now we simply insert it, using Vega's embed code:
           vegaEmbed('#chart1', myChart1);
