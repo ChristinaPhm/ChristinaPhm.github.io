@@ -119,7 +119,7 @@ a:active {
   	left: 120px;
   	width: 80%;
   	text-align: center;
-	border: 3px solid;
+	border: 3px hidden;
 	padding: 30px;
 }
 
