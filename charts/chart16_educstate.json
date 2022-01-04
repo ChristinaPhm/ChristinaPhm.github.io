@@ -1,0 +1,70 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title": {
+    "text": "US Educational Attainment by State",
+    "subtitle": "Source: Wikipedia",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#8a4c92",
+    "subtitleColor": "#6a598b",
+    "offset": 15
+  },
+  "config": {
+    "background": "white",
+    "view": {"stroke": "transparent"}
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChristinaPhm/ChristinaPhm.github.io/main/data/education_by_state.csv"
+  },
+  "columns": 2,
+  "concat": [
+    {
+      "height": 200,
+      "width": 200,
+      "mark": {"type": "bar", "width": 20},
+      "title": {
+        "text": "High School Diploma or higher",
+        "color": "#a33d3a",
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": {
+          "field": "State",
+          "type": "nominal",
+          "title": "",
+          "axis": {"labelAngle": 25}
+        },
+        "y": {
+          "field": "High School Diploma or higher",
+          "type": "quantitative",
+          "title": "Percentage of State Population"
+        },
+        "color": {"field": "State", "type": "nominal", "legend": null},
+        "tooltip": {"field": "High School Diploma or higher", "type": "quantitative"}
+      }
+    },
+    {
+      "height": 200,
+      "width": 200,
+      "mark": {"type": "bar", "width": 20},
+      "title": {
+        "text": "Bachelors Degree or higher",
+        "color": "#a33d3a",
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": {
+          "field": "State",
+          "type": "nominal",
+          "title": "",
+          "axis": {"labelAngle": 25}
+        },
+        "y": {"field": "Bachelors Degree or higher", "type": "quantitative", "title": "", "scale": {"domain": [0, 100]}},
+        "color": {"field": "State", "type": "nominal", "legend": null, "scale": {"scheme": "category20b", "reverse": true}},
+        "tooltip": {"field": "Bachelors Degree or higher", "type": "quantitative"}
+      }
+    }
+  ]
+}
