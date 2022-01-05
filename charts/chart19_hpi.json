@@ -1,0 +1,80 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Stock prices of 5 Tech Companies over Time.",
+  "data": {"url": "https://raw.githubusercontent.com/ChristinaPhm/ChristinaPhm.github.io/main/data/housepriceindex.csv"},
+  "title": {
+    "text": "US House Price Index",
+    "subtitle": "Source: U.S. Federal Housing Finance Agency from FRED",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#72423ab4",
+    "subtitleColor": "#b99278"
+  },
+  "config": {
+    "background": "white",
+    "view": {"stroke": "transparent"}
+  },
+  "width": 300,
+  "height": 300,
+  "mark": "line",
+
+  "transform": [
+    {"calculate": "year(datum.DATE)", "as": "year"},
+    {"filter": "datum.year>minYear"},
+    {"filter": "datum.year<maxYear"},
+    {"calculate": "datum.value", "as": "percent"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1975,
+      "bind": {
+        "input": "range",
+        "min": 1975,
+        "max": 2021,
+        "step": 1,
+        "name": "Start Year: "
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1975,
+        "max": 2021,
+        "step": 1,
+        "name": "End Year: "
+      }
+    }
+  ],
+
+  "encoding": {
+    "x": {"field": "DATE",
+    "type": "temporal",
+    "title": "",
+    "axis": {
+        "grid": true,
+        "labelColor": "#b18c87",
+        "tickColor": "#b18c87",
+        "domainColor": "#b18c87"
+      }
+      },
+    "y": {"field": "Value",
+    "type": "quantitative",
+    "axis": {
+        "grid": true,
+        "labelColor": "#b18c87",
+        "tickColor": "#b18c87",
+        "domainColor": "#b18c87"
+      }
+      },
+    "color": {
+      "field": "State",
+      "type": "nominal",
+      "scale": {"scheme": "tableau20", "reverse": true}
+    },
+    "tooltip": [{"field": "State"}, {"field": "Value"}]
+  }
+}
