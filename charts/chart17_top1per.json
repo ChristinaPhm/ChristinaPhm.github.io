@@ -1,0 +1,96 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Interactive chart with year slider from 1989 to 2021. Data collected from FRED.",
+  "autosize": {"type": "fit-x", "contains": "padding"},
+  "background": "#FFFFFF",
+  "height": 310,
+  "width": 500,
+  "padding": 25,
+  "title": {
+    "text": "Share of Total Net Worth Held by the Top 1%",
+    "subtitle": "Source: FRED",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#975858",
+    "subtitleColor": "#975757"
+  },
+  "data": {
+    "name": "myData",
+    "url": "https://raw.githubusercontent.com/ChristinaPhm/ChristinaPhm.github.io/main/data/data_FRED-WFRBST01134.json",
+    "format": {"type": "json", "property": "observations"}
+  },
+  "mark": {
+    "type": "area",
+    "cursor": "pointer",
+    "line": {
+      "color": "#975757"
+    },
+    "color": {
+      "x1": 1,
+      "y1": 1,
+      "x2": 1,
+      "y2": 0,
+      "gradient": "linear",
+      "stops": [
+        {
+          "offset": 0,
+          "color": "white"
+        },
+        {
+          "offset": 1,
+          "color": "#975757"
+        }
+      ]
+    }
+  },
+  "transform": [
+    {"calculate": "year(datum.date)", "as": "year"},
+    {"filter": "datum.year>minYear"},
+    {"filter": "datum.year<maxYear"},
+    {"calculate": "datum.value/100", "as": "percent"}
+  ],
+  "params": [
+    {
+      "name": "minYear",
+      "value": 1989,
+      "bind": {
+        "input": "range",
+        "min": 1989,
+        "max": 2021,
+        "step": 1,
+        "name": "Start Year: "
+      }
+    },
+    {
+      "name": "maxYear",
+      "value": 2021,
+      "bind": {
+        "input": "range",
+        "min": 1989,
+        "max": 2021,
+        "step": 1,
+        "name": "End Year: "
+      }
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "percent",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"grid": true, "format": "%"},
+      "scale": {"domain": [0, 0.35]}
+    },
+    "tooltip": [
+      {"field": "year", "type": "nominal", "title": "Year"},
+      {"field": "value", "type": "quantitative", "title": "Percentage"}
+    ]
+  }
+}
