@@ -4,7 +4,7 @@
   "autosize": {"type": "fit-x", "contains": "padding"},
   "background": "#FFFFFF",
   "height": 310,
-  "width": 500,
+  "width": 400,
   "padding": 25,
   "title": {
     "text": "Share of Total Net Worth Held by the Top 1%",
