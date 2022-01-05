@@ -63,6 +63,7 @@
       },
     "y": {"field": "Value",
     "type": "quantitative",
+    "title": "",
     "axis": {
         "grid": true,
         "labelColor": "#b18c87",
