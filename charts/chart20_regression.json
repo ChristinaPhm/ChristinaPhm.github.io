@@ -1,0 +1,95 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "",
+  "title": {
+    "text": "Median House Price Correlation with State Education Funding",
+    "subtitle": "Source: US Education Data Initiative and Wikipedia",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 10,
+    "anchor": "start",
+    "color": "#8963a3",
+    "subtitleColor": "#8f65a1"
+  },
+  "config": {
+    "background": "white",
+    "view": {"stroke": "transparent"}
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/ChristinaPhm/ChristinaPhm.github.io/main/data/house%26educspend.csv"
+  },
+  "transform": [
+    {"calculate": "datum.MHP/1000", "as": "MHP"},
+    {"calculate": "datum.Funding/1000", "as": "Funding"}
+  ],
+  "width": 390,
+  "height": 300,
+  "layer": [
+    {
+      "mark": {"type": "point", "filled": true},
+      "encoding": {
+        "x": {
+          "field": "MHP",
+          "type": "quantitative",
+          "scale": {"domain": [100, 650]},
+          "title": "Median House Price ($000)",
+          "axis": {
+          "grid": true,
+          "labelColor": "#5d4168",
+          "tickColor": "#5d4168",
+          "domainColor": "#5d4168"}
+        },
+        "y": {
+          "field": "Funding",
+          "type": "quantitative",
+          "scale": {"domain": [0, 30]},
+          "title": "State & Local Funding ($000)",
+          "axis": {
+          "grid": true,
+          "labelColor": "#5d4168",
+          "tickColor": "#5d4168",
+          "domainColor": "#5d4168"}
+        },
+        "color": {
+          "field": "State",
+          "type": "nominal",
+          "legend": null,
+          "scale": {"scheme": "redpurple", "reverse": true}
+        },
+        "tooltip": {"field": "State", "type": "ordinal"}
+      }
+    },
+    {
+      "mark": {"type": "line", "color": "red"},
+      "transform": [{"regression": "MHP", "on": "Funding"}],
+      "encoding": {
+        "x": {"field": "MHP",
+        "type": "quantitative"
+        },
+        "y": {"field": "Funding",
+        "type": "quantitative"
+        },
+        "color": {
+          "field": "State",
+          "type": "nominal",
+          "legend": null,
+          "scale": {"scheme": "redpurple", "reverse": true}
+        },
+        "tooltip": {"field": "State", "type": "ordinal"}
+      }
+    },
+    {
+      "transform": [
+        {"regression": "MHP", "on": "Funding", "params": true},
+        {"calculate": "'R²: '+format(datum.rSquared, '.2f')", "as": "R2"}
+      ],
+      "mark": {
+        "type": "text",
+        "color": "plum",
+        "x": "width",
+        "align": "right",
+        "y": -10
+      },
+      "encoding": {"text": {"type": "nominal", "field": "R2"}}
+    }
+  ]
+}
