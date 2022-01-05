@@ -28,8 +28,10 @@ h3{
     font-family: 'Lato', sans-serif ;
 }
 
-p{font-family: 'Lato', sans-serif;
+p {
+font-family: 'Lato', sans-serif;
 color: rgb(70, 65, 65);
+text-align: justify;
 }
 
 /*Hyperlinks */
@@ -118,7 +120,7 @@ a:active {
 	position: relative;
   	left: 120px;
   	width: 80%;
-  	text-align: center;
+  	text-align: justify;
 	border: 3px hidden;
 	padding: 30px;
 }
