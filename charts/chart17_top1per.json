@@ -5,7 +5,7 @@
   "background": "#FFFFFF",
   "height": 310,
   "width": 400,
-  "padding": 25,
+  "padding": 0,
   "title": {
     "text": "Share of Total Net Worth Held by the Top 1%",
     "subtitle": "Source: FRED",
