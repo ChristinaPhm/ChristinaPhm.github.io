@@ -79,13 +79,15 @@
       "field": "date",
       "type": "temporal",
       "title": null,
-      "axis": {"grid": false}
+      "axis": {"grid": false, "labelColor": "#b18c87",
+        "tickColor": "#b18c87", "domainColor": "#b18c87"}
     },
     "y": {
       "field": "percent",
       "type": "quantitative",
       "title": null,
-      "axis": {"grid": true, "format": "%"},
+      "axis": {"grid": true, "format": "%", "labelColor": "#b18c87",
+        "tickColor": "#b18c87", "domainColor": "#b18c87"},
       "scale": {"domain": [0, 0.35]}
     },
     "tooltip": [
