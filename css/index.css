@@ -32,6 +32,7 @@ p{
     
     font-family: 'Lato', sans-serif;
     color: rgb(255, 255, 255);
+    text-align: justify;
 }
 
 /*Hyperlinks */
@@ -112,6 +113,7 @@ a:active {
   	border-left: none;
   	border-right: none;
 	padding: 30px;
+	text-align: justify;
     
 }
 
@@ -130,6 +132,7 @@ a:active {
   	border-left: none;
   	border-right: none;
 	padding: 30px;
+	text-align: justify;
 	
 }
 
@@ -149,6 +152,7 @@ a:active {
   	border-left: none;
   	border-right: none;
 	padding: 30px;
+	text-align: justify;
 	
 }
 
@@ -168,6 +172,7 @@ a:active {
   	border-left: none;
   	border-right: none;
 	padding: 30px;
+	text-align: justify;
 	
 }
 
