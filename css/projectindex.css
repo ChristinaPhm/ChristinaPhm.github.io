@@ -178,8 +178,10 @@ a:active {
   	border-right: none;
 	padding: 30px;
 	
+}
+
 #container4{
-	
+
 	align-content: center;
 	display: flex;
 	justify-content: center;
@@ -193,7 +195,7 @@ a:active {
   	border-left: none;
   	border-right: none;
 	padding: 30px;	
-	
+
 }
 
 .box {
@@ -210,6 +212,7 @@ a:active {
 	
 }
 
+/*inspired by Chris Brierley */
 .navigation {
   position: fixed;
   margin: 0;
