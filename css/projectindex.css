@@ -109,6 +109,7 @@ a:active {
   	border-left: none;
   	border-right: none;
 	padding: 30px;
+	right: 0px;
     
 }
 
@@ -123,6 +124,7 @@ a:active {
   	text-align: justify;
 	border: 3px hidden;
 	padding: 30px;
+	right: 0px;
 }
 
 #container1{
@@ -140,6 +142,7 @@ a:active {
   	border-left: none;
   	border-right: none;
 	padding: 30px;
+	right: 0px;
 	
 }
 
@@ -158,6 +161,7 @@ a:active {
   	border-left: none;
   	border-right: none;
 	padding: 30px;
+	right: 0px;
 	
 }
 
@@ -174,6 +178,7 @@ a:active {
   	text-align: center;
   	border: 3px hidden;
 	padding: 30px;
+	right: 0px;
 	
 }
 
@@ -189,6 +194,7 @@ a:active {
   	text-align: center;
   	border: 3px hidden;
 	padding: 30px;	
+	right: 0px;
 
 }
 
