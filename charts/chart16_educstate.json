@@ -42,11 +42,13 @@
           null,
           "Alabama",
           "California",
+          "Hawaii",
           "Illinois",
           "Maryland",
+          "Massachusetts",
           "Mississippi",
           "New York",
-          "Puerto Rico"
+          "West Virginia"
         ],
         "name": "State"
       }
