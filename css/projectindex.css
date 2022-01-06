@@ -153,7 +153,7 @@ a:active {
   	left: 120px;
   	width: 80%;
   	text-align: center;
-  	border: 3px solid #faeae6;
+  	border: 3px hidden;
   	border-top: none;
   	border-left: none;
   	border-right: none;
@@ -172,10 +172,7 @@ a:active {
   	left: 120px;
   	width: 80%;
   	text-align: center;
-  	border: 3px solid rgb(129, 116, 116);
-  	border-top: none;
-  	border-left: none;
-  	border-right: none;
+  	border: 3px hidden;
 	padding: 30px;
 	
 }
