@@ -49,18 +49,18 @@
       "bind": {
         "input": "range",
         "min": 1989,
-        "max": 2022,
+        "max": 2021,
         "step": 1,
         "name": "Start Year: "
       }
     },
     {
       "name": "maxYear",
-      "value": 2022,
+      "value": 2021,
       "bind": {
         "input": "range",
         "min": 1989,
-        "max": 2022,
+        "max": 2021,
         "step": 1,
         "name": "End Year: "
       }
