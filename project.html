@@ -152,9 +152,10 @@
 	    
 	    
 <container class="hcontainer">
-   <p>These area charts were constructed using a <a href="https://github.com/ChristinaPhm/ChristinaPhm.github.io/blob/f0370c2a9b13e7cd80c97609dde96aa4343b4535/python/FREDLoop.ipynb" target="_blank">loop</a> in
-	   Python to batch download 1989-2021 data from <a href="https://fred.stlouisfed.org/categories/33001" target="_blank">FRED</a>. Click <a href="https://raw.githubusercontent.com/ChristinaPhm/ChristinaPhm.github.io/main/data/data_FRED-WFRBST01134.json" target="_blank">here</a> for the data for the first chart and
-	   <a href="https://raw.githubusercontent.com/ChristinaPhm/ChristinaPhm.github.io/main/data/data_FRED-WFRBLB50107.json" target="_blank">here</a> for the second.
+   <p>These charts were constructed using a CORS reverse proxy since <a href="https://fred.stlouisfed.org/categories/33001" target="_blank">FRED</a> APIs cannot be accessed directly from an API call.
+	   Click <a href="https://api.allorigins.win/raw?url=https%3A%2F%2Fapi.stlouisfed.org%2Ffred%2Fseries%2Fobservations%3Fseries_id%3DWFRBST01134%26api_key%3Da0beba487535006b9a2f5164b9470610%26file_type%3Djson" target="_blank">here</a> for the first chart's data and
+	   <a href="https://api.allorigins.win/raw?url=https%3A%2F%2Fapi.stlouisfed.org%2Ffred%2Fseries%2Fobservations%3Fseries_id%3DWFRBLB50107%26api_key%3Da0beba487535006b9a2f5164b9470610%26file_type%3Djson" target="_blank">here</a> for 
+	   the second.
 	</p>
 </container>
 	    
@@ -164,7 +165,7 @@
 <!--Section 2--> 
 <container class="bcontainer">
 	<h2 class="bodyText"><span style="color: rgb(65, 48, 34); font-weight: 700;">The Beginning: Residential Housing</span></h2>
-	<p>A well-versed argument surrounding economic mobility is the idea that it first stems from an individual’s background - their upbringing,
+	<p>A well-versed argument surrounding economic mobility is the idea that it stems from an individual’s background - their upbringing,
 		also seen as the home and state in which they are born. After observing the House Price Index, it is clear that states are respectively 
 		affected by usual house market fluctuations. However, since 1980, New York has seen a significant rise in residential house pricing 
 		and currently is over 2.5 times higher than that of Mississippi. Such significant differences between states, as further evidenced 
